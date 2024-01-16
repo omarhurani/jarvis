@@ -168,7 +168,7 @@ The actions done by guests, clients and websites were previously explained in th
 
 The following figure shows the Use Case Diagram that we built containing the main functionalities of our website.
 
-![Use Case Diagram](./Diagrams/ucd.png)
+![Use Case Diagram](./diagrams/ucd.png)
 
 
 
@@ -202,7 +202,7 @@ We analyzed our requirements, and extracted the following needed classes and int
 
 The following figure shows the class diagram that we designed for our application.
 
-![Class Diagram](./Diagrams/cd.png)]
+![Class Diagram](./diagrams/cd.png)]
 
 ## Sequence Diagrams
 The Sequence Diagram is a UML diagram which describes the behavioral timeline of a certain functionality in the system. It describes exactly how different actors interact with each other through a sequence of actions.
@@ -210,13 +210,13 @@ The Sequence Diagram is a UML diagram which describes the behavioral timeline of
 ### Client Log In
 The sequence diagram shown in the following figure explains the sequence of actions for a guest to log in as a client.
 
-![Sequence Diagram for Client Log In in our application.](./Diagrams/loginseq.png)
+![Sequence Diagram for Client Log In in our application.](./diagrams/loginseq.png)
 
 Firstly, the guest requests the log in from the website, sending their credentials. The website then queries the data to see if that username exists and if the entered username is a client account. If not, it will return an invalid log in request to the guest, but if they are correct, it will query the database again to check if the given password is the correct password for the username entered. If not, it will return an invalid log in request to the guest, but if it is correct, it will create a `Client` object (since the guest is now not a guest anymore and a client). If the guest receives a successful log in request, it will destroy its object (because the user now will be using the created `Client` object instead).
 
 ### Reviewing Completed Tasks
 
-![Sequence Diagram for reviewing completed tasks in our application.](./Diagrams/taskreviewseq.png)
+![Sequence Diagram for reviewing completed tasks in our application.](./diagrams/taskreviewseq.png)
 
 - **Purpose:** An example of how the application will handle a task review call from a client and how it will represent the answers of the test results he received from the tester.
 
@@ -226,7 +226,7 @@ Firstly, the guest requests the log in from the website, sending their credentia
 
 ### Reviewing Testers
 
-![Sequence Diagram for reviewing testers in our application.](./Diagrams/testerreviewseq.png)
+![Sequence Diagram for reviewing testers in our application.](./diagrams/testerreviewseq.png)
 
 - **Purpose:** An example of that how the application will handle a tester review call from a Client.
   
